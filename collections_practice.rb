@@ -35,6 +35,17 @@ def find_a(array)
 end 
 
 def sum_array(array)
-  array.each_with_index { |num| num * num }
+  array.inject { |answer, element| answer + element }
 end
+
+def add_s(array)
+  array.each_with_index.collect do |element, index| 
+  if index == 1 
+    element
+  else 
+    element << "s"
+end
+end 
   
+  
+end 
