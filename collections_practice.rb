@@ -21,3 +21,19 @@ def swap_elements(array)
     a[1]<=>b[2]
   end
 end
+
+def reverse_array(array)
+  array.reverse do |a, b|
+  end
+end
+
+def kesha_maker(array)
+  new_array = []
+  
+  array.each do |n|
+    new_array << n[2] = $
+  end
+  
+end
+
+
