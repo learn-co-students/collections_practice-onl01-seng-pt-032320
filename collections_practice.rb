@@ -31,9 +31,32 @@ def kesha_maker(array)
   new_array = []
   
   array.each do |n|
-    new_array << n[2] = $
+    n[2] = "$"
+  new_array << n
   end
-  
+  new_array
 end
 
+def find_a(array)
+  
+  array.select do |n|
+    n.start_with?("a")  
+    end
+end
 
+def sum_array(array)
+  array.inject(0) do |sum,x| 
+    sum + x 
+end
+end
+
+def add_s(array)
+  array.each_with_index.collect do |word,index|
+    if index != 1 
+        word = word + "s"
+    else
+        word = word
+    end
+  end
+
+end
